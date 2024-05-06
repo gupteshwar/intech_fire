@@ -90,23 +90,23 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"intech_fire.tasks.all"
 # 	],
 # 	"daily": [
 # 		"intech_fire.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"intech_fire.tasks.hourly"
-# 	],
+	"hourly": [
+		"intech_fire.custom_scripts.email_queue.email_queue.delete_email_queues"
+	],
 # 	"weekly": [
 # 		"intech_fire.tasks.weekly"
 # 	]
 # 	"monthly": [
 # 		"intech_fire.tasks.monthly"
 # 	]
-# }
+}
 
 # Testing
 # -------
